@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    height: 60px;
+    box-shadow: 0 10px 20px 10px rgb(220, 220, 220);
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa ~ ul{
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: calc( 100vh - 60px );
+    top: 60px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    display: flex;
+}
+
+label{
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+    color: rgb(65, 65, 65);
+}
+
+li:hover{
+    font-size: 17px ;
+    color: #8e7bef;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+.profile-picture{
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1{
+    font-size: 50px;
+    padding: 20px;
+    margin: 1%;
+}
+
+h3{
+    font-size: 32px;
+    padding: 20px;
+    color: grey;
+    margin: 1%;
+}
+
+.profile{
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+    padding-right: 10px;
+    object-fit: contain;
+    margin-left: 2%;
+}
+
+.presentation-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.presentation-text-one{
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    max-width: 90%;
+}
+
+.presentation-text-two{
+    font-size: 16px;
+    font-weight: 100;
+    color: grey;
+}
+
+.network{
+    display: flex;
+    flex-direction: row;
+}
+
+.network > img{
+    margin: 5%;
+}
+
+button{
+    width: 200px;
+    position: relative;
+    top: 10px;
+    background-color: #8e7bef;
+    border: none;
+    padding: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 23vw;
+    margin: 1%;
+}
+
+.email-icon{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+    label{
+        display: none;
+    }
+    
+    input#menu-hamburguesa ~ ul {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+    
+    li:hover{
+        font-size: 16px;
+        color: #8e7bef;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+
+    .first{
+        margin: 2%;
+        width: 95%;
+        display: grid;
+        grid-template-areas: 
+        "tituloPagina profilePicture"
+        "subtitulo profilePicture"
+        "boton profilePicture"
+        ;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .profile-picture{
+        grid-area: profilePicture;
+    }
+    
+    h3{
+        grid-area: subtitulo;
+        position: relative;
+        left: 10%;
+        font-size: 25px;
+        padding: 20px;
+        color: grey;
+        margin: 1%;
+        max-width: 90%;
+    }
+
+    .titulo-pagina{
+        grid-area: tituloPagina;
+        position: relative;
+        left: 10%;
+        font-size: 42px;
+        padding: 10px;
+        margin: 1%;
+        max-width: 90%;
+    }
+
+    .boton{
+        grid-area: boton;
+        display: flex;
+    }
+
+    button{
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        left: 6vw;
+    }
+
+    .profile{
+        position: relative;
+        min-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .presentation-text-one{
+        font-size: 20px;
+        max-width: 100%;
+        padding: 2% ;
+    }
+    
+    .presentation-text-two{
+        font-size: 20px;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    .presentation-text{
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:990px ) {
+
+    label{
+        display: none;
+    }
+    
+    input#menu-hamburguesa ~ ul {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+    
+    li:hover{
+        font-size: 16px;
+        color: #8e7bef;
+    }
+
+}
+
+@media screen and (min-width:990px ) {
+
+    .first{
+        margin: 2%;
+        width: 95%;
+        display: grid;
+        grid-template-areas: 
+        "tituloPagina profilePicture"
+        "subtitulo profilePicture"
+        "boton profilePicture"
+        ;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .profile-picture{
+        grid-area: profilePicture;
+    }
+    
+    h3{
+        grid-area: subtitulo;
+        position: relative;
+        left: 10%;
+        font-size: 38px;
+        padding: 20px;
+        color: grey;
+        margin: 1%;
+        max-width: 90%;
+    }
+
+    .titulo-pagina{
+        grid-area: tituloPagina;
+        position: relative;
+        left: 10%;
+        font-size: 70px;
+        padding: 10px;
+        margin: 1%;
+        max-width: 90%;
+    }
+
+    .boton{
+        grid-area: boton;
+        display: flex;
+    }
+
+    button{
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        left: 6vw;
+    }
+
+    .profile{
+        position: relative;
+        min-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .presentation-text-one{
+        font-size: 24px;
+        max-width: 100%;
+        padding: 2% ;
+    }
+    
+    .presentation-text-two{
+        font-size: 24px;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    .presentation-text{
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+}
+
+
+.second{
+    background-color: #fcda68;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.experiencia-y-habilidades{
+    font-size: 32px;
+}
+
+.p-experiencia{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+.exp-bloqueUno{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.exp-titulo{
+    margin: 5%;
+}
+
+.exp-titulo-texto{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.exp-uno{
+    display: grid;
+    grid-template-areas: "periodoUno actividadLugarUno";
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.periodo-uno{
+    grid-area: periodoUno;
+    max-width: 90%;
+    font-size: 16px;
+}
+
+.actividad-lugar-uno{
+    grid-area: actividadLugarUno;
+    max-width: 90%;
+}
+
+.actividad-uno{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+hr{
+    border-color: black;
+    border-width: 1px;
+    margin: 5%;
+}
+
+.exp-dos{
+    display: grid;
+    grid-template-areas: "periodoDos actividadLugarDos";
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.periodo-dos{
+    grid-area: periodoDos;
+    max-width: 90%;
+    font-size: 16px;
+}
+
+.actividad-lugar-dos{
+    grid-area: actividadLugarDos;
+    max-width: 90%;
+}
+
+.actividad-dos{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.lugar-uno{
+    padding-top: 2%;
+}
+
+.lugar-dos{
+    padding-top: 2%;
+}
+
+.habilidades{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.habil-imagen-texto{
+    display: grid;
+    grid-template-areas: 
+    "JS HTML"
+    "CSS project"
+    ;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.habil-imagen-texto-uno{
+    grid-area: JS;
+    margin-left: 30%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.habil-imagen-texto-dos{
+    grid-area: HTML;
+    margin-left: 29vw;
+    margin-top: 16%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.habil-imagen-texto-tres{
+    grid-area: CSS;
+    margin-left: 30%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.habil-imagen-texto-cuatro{
+    grid-area: project;
+    margin-left: 29vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.habil-imagen-uno{
+    padding-left: 4vw;
+}
+
+
+.habil-imagen-tres{
+    padding-left: 4vw;
+}
+
+.habil-imagen-cuatro{
+    padding-left: 1vw;
+}
+
+.habil-texto-uno{
+    font-size: 14px;
+    padding-left: 6vw;
+    max-width: 50%;
+    margin-top: 3%;
+}
+
+.habil-texto-dos{
+    font-size: 14px;
+    padding-left: 2vw;
+    max-width: 50%;
+}
+
+
+.habil-texto-tres{
+    font-size: 14px;
+    padding-left: 6vw;
+    max-width: 50%;
+}
+
+.habil-texto-cuatro{
+    font-size: 14px;
+    max-width: 40%;
+}
