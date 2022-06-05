@@ -430,9 +430,9 @@ button:hover{
 }
 
 hr{
-    border-color: black;
-    border-width: 1px;
+    border: 1px solid rgb(56, 56, 56);
     margin: 5%;
+    background-color: rgb(56, 56, 56);
 }
 
 .exp-dos{
@@ -612,6 +612,78 @@ hr{
 
     .habil-imagen-texto-tres{
         padding-top: 12%;
+    }
+
+}
+
+.port-img-txt{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+}
+
+.portafolio{
+    font-size: 32px;
+    padding-left: 6%;
+}
+
+.img-beauty{
+    max-width: 270px;
+    height: auto;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.img-training{
+    max-width: 290px;
+    height: auto;
+    padding: 10px;
+    object-fit: contain;
+    padding-bottom: 0;
+}
+
+.img-hotel{
+    max-width: 290px;
+    height: auto;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom:0 ;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.beauty-txt{
+    padding-left: 4%;
+    color: #8e7bef;
+    padding-bottom: 7px;
+}
+
+.training-txt{
+    padding-left: 7%;
+    color: #8e7bef;
+}
+
+.hotel-txt{
+    padding-left: 7%;
+    color: #8e7bef;
+}
+
+@media screen and (min-width:860px) {
+.port-img-txt{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    }
+
+    .portafolio{
+        font-size: 32px;
+        padding-left: 12%;
     }
 
 }
