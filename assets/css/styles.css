@@ -659,16 +659,19 @@ hr{
     padding-left: 4%;
     color: #8e7bef;
     padding-bottom: 7px;
+    font-size: 18px;
 }
 
 .training-txt{
     padding-left: 7%;
     color: #8e7bef;
+    font-size: 18px;
 }
 
 .hotel-txt{
     padding-left: 7%;
     color: #8e7bef;
+    font-size: 18px;
 }
 
 @media screen and (min-width:860px) {
@@ -686,4 +689,117 @@ hr{
         padding-left: 12%;
     }
 
+    .beauty-txt{
+        font-size: 22px;
+    }
+    
+    .training-txt{
+        font-size: 22px;
+    }
+    
+    .hotel-txt{
+        font-size: 22px;
+    }
+
 }
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.fourth-contacto{
+    font-size: 32px;
+    padding-left: 4%;
+}
+
+.contacto-img-txt{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 7%;
+    margin-top: 2%;
+}
+
+.cel-img-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin-left: 9%;
+}
+
+.mail-img-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin-right: 15%;
+}
+
+.texto-numero{
+    text-align: center;
+    font-size: 14px;
+    min-width: 200px;
+    font-weight: bold;
+}
+
+.numero{
+    text-align: center;
+    font-size: 11px;
+    color: #423f40;
+}
+
+
+.texto-email{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.email{
+    text-align: center;
+    font-size: 11px;
+    color: #423f40;
+    max-width: 150px;
+}
+
+.img-cel{
+    margin: 10%;
+}
+
+.img-mail{
+    margin: 10%;
+}
+
+
+@media screen and (min-width:860px) {
+        .fourth-contacto{
+            font-size: 32px;
+            padding-left: 12%;
+        }
+    
+
+        .texto-numero{
+            font-size: 22px;
+        }
+        
+        .numero{
+            font-size: 18px;
+        }
+        
+        
+        .texto-email{
+            font-size: 22px;
+        }
+        
+        .email{
+            font-size: 18px;
+            max-width: 200px;
+        }
+        
+
+    }
